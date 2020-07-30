@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".AddUser">
+
+    <EditText
+        android:id="@+id/et_uid"
+        android:layout_width="308dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User ID"/>
+
+    <EditText
+        android:id="@+id/et_uname"
+        android:layout_width="308dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_uid"/>
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:background="#4286f4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_uname"
+        android:onClick="addImgBtnClick"/>
+
+    <ImageView
+        android:id="@+id/iv_uphoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_image"/>
+
+    <Button
+        android:id="@+id/btn_add_user"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="27dp"
+        android:text="Add User"
+        android:background="#4286f4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/iv_uphoto"
+        android:onClick="addUserBtnClick"/>
+
+</RelativeLayout>
